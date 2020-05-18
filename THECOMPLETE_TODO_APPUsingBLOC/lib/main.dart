@@ -1,15 +1,11 @@
-
-import 'package:expense/widget/EXPENSE/todoscreen.dart';
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:provider/provider.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 import './model/TODO.dart';
+import './bloc/counter_bloc.dart';
+import './widget/todoscreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +15,7 @@ void main() async {
   final appDocumentDir = await getApplicationDocumentsDirectory();
   Hive.init(appDocumentDir.path);
   Hive.registerAdapter(TodoItemAdapter());
-   await Hive.openBox('todo');
+  await Hive.openBox('todo');
 
   runApp(MyApp());
 }
@@ -30,7 +26,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
- 
   List<Box> boxlist = [];
 
   Future openingBox() async {
@@ -43,55 +38,39 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    //creating primary black as material colour
     const int _blackPrimaryValue = 0xFF000000;
     const MaterialColor primaryBlack = MaterialColor(
-  _blackPrimaryValue,
-  <int, Color>{
-    50: Color(0xFF000000),
-    100: Color(0xFF000000),
-    200: Color(0xFF000000),
-    300: Color(0xFF000000),
-    400: Color(0xFF000000),
-    500: Color(_blackPrimaryValue),
-    600: Color(0xFF000000),
-    700: Color(0xFF000000),
-    800: Color(0xFF000000),
-    900: Color(0xFF000000),
-  },
-);
-// const MaterialColor white = const MaterialColor(
-//   0xFFFFFFFF,
-//   const <int, Color>{
-//     50: const Color(0xFFFFFFFF),
-//     100: const Color(0xFFFFFFFF),
-//     200: const Color(0xFFFFFFFF),
-//     300: const Color(0xFFFFFFFF),
-//     400: const Color(0xFFFFFFFF),
-//     500: const Color(0xFFFFFFFF),
-//     600: const Color(0xFFFFFFFF),
-//     700: const Color(0xFFFFFFFF),
-//     800: const Color(0xFFFFFFFF),
-//     900: const Color(0xFFFFFFFF),
-//   },
-// );
-
+      _blackPrimaryValue,
+      <int, Color>{
+        50: Color(0xFF000000),
+        100: Color(0xFF000000),
+        200: Color(0xFF000000),
+        300: Color(0xFF000000),
+        400: Color(0xFF000000),
+        500: Color(_blackPrimaryValue),
+        600: Color(0xFF000000),
+        700: Color(0xFF000000),
+        800: Color(0xFF000000),
+        900: Color(0xFF000000),
+      },
+    );
     
-    return  ChangeNotifierProvider(
-      create: (context)=>TodoProvider(),
-          child: MaterialApp(
-      
-        debugShowCheckedModeBanner: false,
-        
-        theme: ThemeData(
-             primarySwatch:primaryBlack,
-             accentColor: Colors.grey,
-            fontFamily: 'Quicksand',
-            textTheme: ThemeData.light().textTheme.copyWith(
-                    title: TextStyle(
-                  fontFamily: 'Quicksand',
-                  fontWeight: FontWeight.bold,
-                ))),
-        home: FutureBuilder(
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          primarySwatch: primaryBlack,
+          accentColor: Colors.grey,
+          fontFamily: 'Quicksand',
+          textTheme: ThemeData.light().textTheme.copyWith(
+                  title: TextStyle(
+                fontFamily: 'Quicksand',
+                fontWeight: FontWeight.bold,
+              ))),
+      home: BlocProvider(
+        create: (context) => CounterBloc(),
+        child: FutureBuilder(
           future:
               // Hive.openBox('todo'),
               openingBox(),
@@ -103,8 +82,6 @@ class _MyAppState extends State<MyApp> {
                 return TodoScreen();
             } else
               return TodoScreen();
-
-            
           },
         ),
       ),
