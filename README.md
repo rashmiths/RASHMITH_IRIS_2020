@@ -5,6 +5,7 @@ Todo app TodoApp Project repo has two branches with two todo app made with provi
 How to Use Step 1:
 
 Download or clone this repo by using the link below:
+https://github.com/rashmiths/RASHMITH_IRIS_2020.git
 
  Step 2:
 
