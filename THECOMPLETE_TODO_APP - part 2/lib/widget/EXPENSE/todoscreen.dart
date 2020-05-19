@@ -47,7 +47,7 @@ class _TodoScreenState extends State<TodoScreen> {
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime(2016),
-      lastDate: DateTime.now(),
+      lastDate:  DateTime(DateTime.now().year+3),
     ).then((pickedDate) {
       if (pickedDate == null) {
         return;
