@@ -1,19 +1,20 @@
-## Todo app with BLOC
+# Todo app with BLOC
 
-## How to Use 
+# How to Use 
 
-# Step 1: 
+## Step 1: 
 Download or clone this repo by using the link below: https://github.com/rashmiths/RASHMITH_IRIS_2020.git 
 
-# Step 2: 
+## Step 2: 
 Go to project root and execute the following command in console to get the required dependencies:
 flutter pub get 
 
-# Step 3: 
+## Step 3: 
 Run the Project
 
 
-# Todo Features: 
+# Todo Features:
+
 Home 
 Theme 
 newIcon 
@@ -25,9 +26,9 @@ Validation
 todo list added is sorted 
 searching for a particular date:even though there is a chance of searching for a date only the list gets updated the table calender remains same making it easy to return to today's List adding deleting editing completing a TODO 
 
-## Here is the core folder structure which flutter provides. 
+# Here is the core folder structure which flutter provides. 
 
-# flutter-app/ |- android |- assets |- build |- ios |- lib |- test 
+### flutter-app/ |- android |- assets |- build |- ios |- lib |- test 
 
 assets:it has the icon of app along with the fonts used. 
 
