@@ -55,8 +55,13 @@ todoscreen.dart: this is the main page of the App which also has the functionali
 
 ## Photos of app:  
 
-![WhatsApp Image 2020-05-19 at 10 00 37 PM (4)](https://user-images.githubusercontent.com/54366663/82353582-46285980-9a1d-11ea-9701-0fce9a53e90e.jpeg) 
-![WhatsApp Image 2020-05-19 at 10 00 37 PM (2)](https://user-images.githubusercontent.com/54366663/82353834-97d0e400-9a1d-11ea-8ebb-c2d69f0e5de8.jpeg) 
-![WhatsApp Image 2020-05-19 at 10 00 37 PM (1)](https://user-images.githubusercontent.com/54366663/82353852-9e5f5b80-9a1d-11ea-972a-eda6c5cc2132.jpeg) 
-![WhatsApp Image 2020-05-19 at 10 00 37 PM](https://user-images.githubusercontent.com/54366663/82353893-acad7780-9a1d-11ea-8bd2-e7f1d7744598.jpeg) 
+<tr>
+    <td><img src="https://user-images.githubusercontent.com/54366663/82353582-46285980-9a1d-11ea-9701-0fce9a53e90e.jpeg" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/54366663/82353834-97d0e400-9a1d-11ea-8ebb-c2d69f0e5de8.jpeg" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/54366663/82353852-9e5f5b80-9a1d-11ea-972a-eda6c5cc2132.jpeg" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/54366663/82353893-acad7780-9a1d-11ea-8bd2-e7f1d7744598.jpeg</td>
+  </tr>
+
+## GIF
+
 ![20200519_223148](https://user-images.githubusercontent.com/54366663/82356050-b2588c80-9a20-11ea-803f-7aaf35b0a364.gif)
