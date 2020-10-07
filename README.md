@@ -54,13 +54,15 @@ todoscreen.dart: this is the main page of the App which also has the functionali
 
 
 ## Photos of app:  
-
+<table>
 <tr>
     <td><img src="https://user-images.githubusercontent.com/54366663/82353582-46285980-9a1d-11ea-9701-0fce9a53e90e.jpeg" width=250 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/54366663/82353834-97d0e400-9a1d-11ea-8ebb-c2d69f0e5de8.jpeg" width=250 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/54366663/82353852-9e5f5b80-9a1d-11ea-972a-eda6c5cc2132.jpeg" width=250 height=480></td>
     <td><img src="https://user-images.githubusercontent.com/54366663/82353893-acad7780-9a1d-11ea-8bd2-e7f1d7744598.jpeg</td>
   </tr>
+</table>
+        
 
 ## GIF
 
