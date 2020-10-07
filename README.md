@@ -66,4 +66,6 @@ todoscreen.dart: this is the main page of the App which also has the functionali
 
 ## GIF
 
+### How to delete a todo
+
 ![20200519_223148](https://user-images.githubusercontent.com/54366663/82356050-b2588c80-9a20-11ea-803f-7aaf35b0a364.gif)
