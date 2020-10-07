@@ -16,14 +16,23 @@ Run the Project
 # Todo Features:
 
 Home 
+
 Theme 
+
 newIcon 
+
 different fontStyle
+
 TableCalender 
+
 Time And DatePicker 
+
 Hive Database Bloc
+
 Validation 
+
 todo list added is sorted 
+
 searching for a particular date:even though there is a chance of searching for a date only the list gets updated the table calender remains same making it easy to return to today's List adding deleting editing completing a TODO 
 
 # Here is the core folder structure which flutter provides. 
