@@ -1,11 +1,57 @@
+# Todo app with BLOC
 
+# How to Use 
 
-# Todo app
-
-Todo app Project repo has two folders(Provider And Bloc)with two todo app made with provider and Bloc 
-
+## Step 1: 
 Download or clone this repo by using the link below: https://github.com/rashmiths/RASHMITH_IRIS_2020.git 
-Respective readme s are written in the respective Branches. 
+
+## Step 2: 
+Go to project root and execute the following command in console to get the required dependencies:
+flutter pub get 
+
+## Step 3: 
+Run the Project
+
+
+# Todo Features:
+
+Home 
+Theme 
+newIcon 
+different fontStyle
+TableCalender 
+Time And DatePicker 
+Hive Database Bloc
+Validation 
+todo list added is sorted 
+searching for a particular date:even though there is a chance of searching for a date only the list gets updated the table calender remains same making it easy to return to today's List adding deleting editing completing a TODO 
+
+# Here is the core folder structure which flutter provides. 
+
+### flutter-app/ |- android |- assets |- build |- ios |- lib |- test 
+
+assets:it has the icon of app along with the fonts used. 
+
+Here is the folder structure we have been using in this project
+
+(Bloc Project) lib/ | -Bloc/ |- model/ |- widgets/ |- main.dart
+Now, lets dive into the lib folder which has the main code for the application.
+
+Bloc — Contains all the files required for Bloc Functionalities widgets — Contains the common widgets for your applications. 
+For example, TodoList,screen etc.
+
+model/Todo:Class that Defines a TodoItem 
+
+model/Todo.g:responsible for binary conversions required for storage in hive 
+
+main.dart - This is the starting point of the application. All the application level configurations are defined in this file i.e, theme, title, orientation etc.
+
+Widgets Contains the common widgets. 
+
+widgets/ |- todolist.dart |- todoscreen.dart todolist.dart: This is the widget reponsible for the list of todo's ,it sorts,also checks ehether the list is empty,edits,deletes the todo.
+
+todoscreen.dart: this is the main page of the App which also has the functionality of navigating to a particular day,adding new todo. eve though there is a chance of searching for a date only the list updated the table calender remains same making it easy to return to today's List
+
 
 ## Photos of app:  
 
